@@ -461,13 +461,13 @@ footer ul {
 
 /* Section 1 - Contact Info */
 .contact-info {
-    background-color: var(--veryLightGray);
+    background-color: var(--lightGrayishBlue);
     padding: 80px 0;
 }
 
 .info-grid {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -518,7 +518,7 @@ footer ul {
 }
 
 .submit-btn {
-    background-color: var(--limeGreen);
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     color: white;
     padding: 15px 30px;
     border: none;
