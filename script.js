@@ -9,5 +9,13 @@ toggleButton.addEventListener('click', () => {
 });
 
 
-document.querySelector('.height').innerHTML = window.innerWidth
+// document.querySelector('.height').innerHTML = window.innerWidth
 
+const faqQuestion = document.querySelectorAll('.faq-question');
+
+faqQuestion.forEach(item => {
+    item.addEventListener('click', () => {
+        const parent = item.parentElement;
+        parent.classList.toggle('active');
+    });
+});

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Easybank page</title>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./images/logo.svg" alt="logo-img" class="logo-img"></a>
+        </div>
+
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+
+        <button class="request-btn">Request Invite</button>
+
+        <button class="dropdown-toggle"><img src="./images/icon-hamburger.svg" alt="icon-hamburger"></button>
+    </header>
+
+
+    <!-- contact info -->
+
+    <section class="contact-info">
+        <div class="contact-container">
+            <div class="info-grid">
+                <div class="info">
+                    <h2>Contact Information</h2>
+                    <p><strong>Address:</strong> 123 Easybank Plaza, New York, NY 10001</p>
+                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Email:</strong> support@easybank.com</p>
+                </div>
+                <div class="map">
+                    <!-- Optional: Google Map Embed -->
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="350" style="border:0;"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COntact form -->
+
+    <section class="contact-form">
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <form action="#" method="POST" class="form-grid">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- FAQ ACCORDION -->
+
+    <section class="faq-section">
+
+        <div class="contact-container">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I sign up for an Easybank account?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+
+                <div class="faq-answer">
+                    <p>
+                        Signing up for an Easybank account is simple. Just click on the "Request Invite" button on the
+                        homepage, fill out the form, and we’ll get you started in no time.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What should I do if I lose my Easybank card?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        If you lose your Easybank card, contact our support team immediately at +1 (555) 123-4567, and
+                        we’ll block the card and issue a new one for you.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How can I check my account balance?</h3>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        You can check your account balance anytime using our mobile app or by logging into your account
+                        on the Easybank website.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+
+    <footer>
+        <div class="container">
+
+            <div class="ft-one">
+
+                <div class="social-link">
+
+                    <a href="index.html"><img src="./images/logo-dark.svg" alt="logo-img" class="logo-img"></a>
+
+                    <ul class="social-link-list">
+                        <li><a href="#facebook"><img class="socials-icons" src="./images/icon-facebook.svg"
+                                    alt="icon-facebook"></a>
+                        </li>
+                        <li><a href="#youtube"><img class="socials-icons" src="./images/icon-youtube.svg"
+                                    alt="icon-youtube"></a>
+                        </li>
+                        <li><a href="twitter.com/DevSyntactic"><img class="socials-icons"
+                                    src="./images/icon-twitter.svg" alt="icon-twitter"></a></li>
+                        <li><a href="#pinterest"><img class="socials-icons" src="./images/icon-pinterest.svg"
+                                    alt="icon-pinterest"></a></li>
+                        <li><a href="#instagram"><img class="socials-icons" src="./images/icon-instagram.svg"
+                                    alt="icon-instagram"></a></li>
+                    </ul>
+                </div>
+
+                <ul class="ft-nav-1">
+                    <li> <a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+
+                <ul class="ft-nav-2">
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="ft-two">
+                <button class="request-btn">Request Invite</button>
+                <h5>© Easybank. All Rights Reserved</h5>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- scripts -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

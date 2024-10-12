@@ -76,7 +76,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 2;
     width: 100vw;
 }
@@ -100,7 +101,7 @@ header {
     width: 0;
     height: 4px;
     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .nav li a:hover::after {
@@ -125,7 +126,6 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 40px;
 }
 
 .banner-details {
@@ -164,7 +164,7 @@ header {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-x: 90px;
-    background-position-y: -180px;
+    background-position-y: -160px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,7 +172,7 @@ header {
 
 .mockup-img {
     width: 65%;
-    transform: translate(140px, -50px);
+    transform: translate(140px, -70px);
 }
 
 /* features section */
@@ -357,6 +357,228 @@ footer ul {
     font-size: 0.8rem;
     font-weight: 300;
 }
+
+
+/* ABOUTTT PAGE STYLING */
+
+/* General */
+.about-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* Section 1 - About Hero */
+.about-hero {
+    background-color: var(--lightGrayishBlue);
+    padding: 100px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Section 2 - Our Values */
+.our-values {
+    background-color: var(--white);
+    padding: 80px 0;
+    /* text-align: center; */
+}
+
+.our-values h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.values-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    background: var(--veryLightGray);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 300px;
+    transition: ease-in-out all 0.5s;
+}
+
+.value-card:hover,
+.value-card p:hover {
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: var(--white);
+    cursor: pointer;
+}
+
+.value-card img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* CONTACT PAGE STYLING */
+
+.contact-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* Section 1 - Contact Info */
+.contact-info {
+    background-color: var(--veryLightGray);
+    padding: 80px 0;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    max-width: 500px;
+}
+
+.info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.map iframe {
+    border-radius: 10px;
+}
+
+/* Section 2 - Contact Form */
+.contact-form {
+    background-color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-grid input,
+.form-grid textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--grayishBlue);
+}
+
+.submit-btn {
+    background-color: var(--limeGreen);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Section 3 - FAQ */
+.faq-section {
+    background-color: var(--veryLightGray);
+    padding: 80px 0;
+}
+
+.faq-section h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid var(--grayishBlue);
+    border-radius: 10px;
+}
+
+.faq-question {
+    background-color: var(--white);
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question h3 {
+    font-size: 20px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 20px;
+    background-color: var(--veryLightGray);
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .toggle-icon {
+    transform: rotate(45deg);
+}
+
+.toggle-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
 
 /* responsiveness */
 @media screen and (max-width: 765px) {
