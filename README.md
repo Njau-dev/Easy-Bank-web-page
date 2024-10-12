@@ -23,7 +23,9 @@ Clone the Easybank webpage and add more pages, interractions and forms to make i
 
 ### Screenshot
 
-![Page screenshot](image.png)
+Landing page screenshot
+
+![Page screenshot](/design/Screenshot-Easybank.png)
 
 
 ### Links
@@ -46,18 +48,17 @@ Clone the Easybank webpage and add more pages, interractions and forms to make i
 
 - 
 <h1>Some HTML code I'm proud of</h1>
-```
 ```css
 .why-list>div img {
     padding: 10px 0;
 }
 learned a new css selector
 ```
-```js
+<!-- ```js
 const proudOfThisFunc = () => {
   console.log('🎉')
 }
-```
+``` -->
 
 ### Continued development
 
