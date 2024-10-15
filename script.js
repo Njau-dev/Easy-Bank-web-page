@@ -19,3 +19,32 @@ faqQuestion.forEach(item => {
         parent.classList.toggle('active');
     });
 });
+
+// NEWSLETTER
+
+const newsForm = document.getElementById('newsletter-form');
+
+
+newsForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const emailInput = document.getElementById('email').value;
+    const formMessage = document.getElementById('form-message');
+
+    // Simple email validation using regex
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+    // Simulating successful subscription
+    if (emailPattern.test(emailInput)) {
+
+        formMessage.textContent = "Thank you for subscribing!";
+        formMessage.classList.remove('error');
+        document.getElementById('newsletter-form').reset();
+        // Clear the input field
+
+    } else {
+        formMessage.textContent = "Please enter a valid email address.";
+        formMessage.classList.add('error');
+    }
+});
