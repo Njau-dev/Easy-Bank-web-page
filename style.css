@@ -687,6 +687,100 @@ footer ul {
 /* section 3 styling is similar to homepage styling */
 
 
+/* Career page */
+/* Careers Hero Section */
+.careers-hero {
+    background-color: var(--lightGrayishBlue);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.careers-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.careers-hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.careers-hero p {
+    font-size: 18px;
+    color: var(--grayishBlue);
+}
+
+/* Job Listings Section */
+.job-listings {
+    padding: 60px 50px;
+    background-color: var(--veryLightGray);
+}
+
+.job-listings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.job-listings h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.job-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.apply-btn {
+    background-color: var(--brightBlue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: var(--darkBlue);
+}
+
+/* Company Culture Section */
+.company-culture {
+    padding: 80px 50px;
+    background-color: var(--lightGrayishBlue);
+    text-align: center;
+}
+
+.company-culture-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.company-culture h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.company-culture p {
+    font-size: 18px;
+    color: var(--grayishBlue);
+}
+
+
 
 /* responsiveness */
 @media screen and (max-width: 765px) {
