@@ -25,7 +25,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
             <li><a href="careers.html">Careers</a></li>
         </ul>
 
@@ -33,6 +33,37 @@
 
         <button class="dropdown-toggle"><img src="./images/icon-hamburger.svg" alt="icon-hamburger"></button>
     </header>
+
+    <!-- Popup Form Container -->
+    <div class="popup-form-container">
+
+        <div class="popup-form">
+
+            <span class="close-btn">&times;</span>
+            <h2>Request Invite</h2>
+
+            <form id="invite-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <button type="submit" class="request-btn">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
 
     <!-- Blog Articles -->
 
@@ -219,7 +250,7 @@
             <p>Stay updated with the latest news and articles from Easybank.</p>
             <form id="newsletter-form" class="newsletter-form">
                 <input type="email" id="email" placeholder="Enter your email address" required>
-                <button type="submit" class="request-btn">Subscribe</button>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
             </form>
             <div id="form-message" class="form-message"></div>
         </div>
@@ -255,11 +286,11 @@
                 <ul class="ft-nav-1">
                     <li> <a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
 
                 <ul class="ft-nav-2">
-                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="careers.html">Careers</a></li>
                     <li><a href="#support">Support</a></li>
                     <li><a href="#privacy-policy">Privacy Policy</a></li>
                 </ul>
