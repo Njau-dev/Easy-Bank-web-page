@@ -79,34 +79,34 @@ inviteForm.addEventListener('submit', (e) => {
 
 // NEWSLETTER
 
-const newsForm = document.getElementById('newsletter-form');
+const newsLetterForms = document.querySelectorAll('.newsletter-form');
 
+newsLetterForms.forEach((form) => {
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-newsForm.addEventListener('submit', function (e) {
-    e.preventDefault();
+        const emailInput = document.querySelector('.email').value.trim();
+        const formMessage = document.querySelector('.form-message');
 
-    const emailInput = document.getElementById('email').value.trim();
-    const formMessage = document.getElementById('form-message');
+        // Simple email validation using regex
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Simple email validation using regex
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        // Simulating successful subscription
+        if (emailPattern.test(emailInput)) {
+            formMessage.textContent = "Thank you for subscribing!";
+            formMessage.classList.remove('error');
+            formMessage.classList.add('success');
 
-
-    // Simulating successful subscription
-    if (emailPattern.test(emailInput)) {
-        formMessage.textContent = "Thank you for subscribing!";
-        formMessage.classList.remove('error');
-        formMessage.classList.add('success');
-
-        setTimeout(() => {
-            document.getElementById('newsletter-form').reset();
-        }, 2000);
-
-    } else {
-        formMessage.textContent = "Please enter a valid email address.";
-        formMessage.classList.add('error');
-    }
+            setTimeout(() => {
+                form.reset();
+            }, 1500);
+        } else {
+            formMessage.textContent = "Please enter a valid email address.";
+            formMessage.classList.add('error');
+        }
+    });
 });
+
 
 // Initialize AOS
 AOS.init({
