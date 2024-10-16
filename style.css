@@ -214,6 +214,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: visible;
 }
 
 .banner-details {
@@ -257,11 +258,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible;
+    position: relative;
 }
 
 .mockup-img {
     width: 65%;
     transform: translate(140px, -70px);
+    object-fit: cover;
+    /* position: absolute; */
+    overflow: visible;
 }
 
 /* features section */

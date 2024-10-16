@@ -85,7 +85,7 @@ const newsForm = document.getElementById('newsletter-form');
 newsForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const emailInput = document.getElementById('email').value;
+    const emailInput = document.getElementById('email').value.trim();
     const formMessage = document.getElementById('form-message');
 
     // Simple email validation using regex
@@ -96,10 +96,20 @@ newsForm.addEventListener('submit', function (e) {
     if (emailPattern.test(emailInput)) {
         formMessage.textContent = "Thank you for subscribing!";
         formMessage.classList.remove('error');
-        document.getElementById('newsletter-form').reset();
+        formMessage.classList.add('success');
+
+        setTimeout(() => {
+            document.getElementById('newsletter-form').reset();
+        }, 2000);
 
     } else {
         formMessage.textContent = "Please enter a valid email address.";
         formMessage.classList.add('error');
     }
+});
+
+// Initialize AOS
+AOS.init({
+    duration: 1000,
+    once: true,
 });
