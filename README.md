@@ -1,6 +1,14 @@
-# Frontend Mentor - Easybank landing page solution
+# 🏦 EasyBank Landing Page  
 
-This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+**A modern multi-page banking website with smooth interactions**  
+🛠️ Built with HTML, CSS, and Vanilla JavaScript  
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)  
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)  
+
+---
 
 ## Table of contents
 
@@ -19,7 +27,26 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ### The challenge
 
+📌 Frontend Mentor Challenge
+
+This project is a solution to the EasyBank Landing Page challenge on Frontend Mentor.
+
 Clone the Easybank webpage and add more pages, interractions and forms to make it dynamic and engaging
+
+
+---
+
+## 🚀 **Features**  
+- 🌐 **Multi-Page Navigation**: Clean routing between Home, About, and Contact pages  
+- 📱 **Fully Responsive**: Optimized for all screen sizes (mobile-first approach)  
+- 🎨 **Modern Design**: Faithful implementation of Frontend Mentor's UI/UX specs  
+- ✨ **Interactive Elements**:  
+  - Smooth dropdown menus  
+  - Animated CTAs  
+  - Mobile hamburger menu  
+
+---
+
 
 ### Screenshot
 
@@ -35,13 +62,15 @@ Landing page screenshot
 
 ## My process
 
-### Built with
+🛠️ Tech Stack
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+    HTML5: Semantic markup with ARIA labels
+
+    CSS3: Flexbox, Grid, and CSS variables for theming
+
+    JavaScript: DOM manipulation for interactive elements
+
+    No Frameworks: Pure vanilla implementatio
 
 
 ### What I learned
@@ -52,8 +81,8 @@ Landing page screenshot
 .why-list>div img {
     padding: 10px 0;
 }
-learned a new css selector
 ```
+learned a new css selector
 <!-- ```js
 const proudOfThisFunc = () => {
   console.log('🎉')
@@ -70,4 +99,4 @@ I later added the pages and made it a multipage project with more animations and
 
 - Website - [EasyBank web page](https://njau-dev.github.io/Easy-Bank-web-page/)
 - Frontend Mentor - [@Njau-dev](https://www.frontendmentor.io/profile/Njau-dev)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/dzeph01)
